@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Piano Man</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="title">🎹 The Piano Man</h1>
-      <p class="intro">
-        Elige una canción y me la pides aquí…
-      </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Piano Man</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 120px;
+    }
+    .whatsapp {
+      display: block;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .whatsapp a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      padding: 5px 0;
+    }
+    .artista {
+      color: #666;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" alt="The Piano Man logo" class="logo">
+  <h1>🎹 The Piano Man</h1>
+  <p>Elige una canción y me la pides aquí...</p>
 
-      <div class="song-list">
-        <!-- Lista de canciones con artistas, tal como están en el archivo -->
-        <div class="song">
-          <p class="song-title">11 & 6</p>
-          <p class="song-artist">Fito Páez</p>
-        </div>
-        <div class="song">
-          <p class="song-title">Ahora te puedes Marchar</p>
-          <p class="song-artist">Luis Miguel</p>
-        </div>
-        <div class="song">
-          <p class="song-title">Amarrame</p>
-          <p class="song-artist">Mon Laferte</p>
-        </div>
-        <div class="song">
-          <p class="song-title">Amiga</p>
-          <p class="song-artist">Miguel Bose</p>
-        </div>
-        <div class="song">
-          <p class="song-title">Arthur Theme</p>
-          <p class="song-artist">Christopher Cross</p>
-        </div>
-        <!-- Más canciones aquí, agrega todo el contenido extraído del Excel -->
-        <!-- Continúa copiando y pegando las canciones hasta completar las 78 -->
-      </div>
+  <div class="whatsapp">
+    <a href="https://wa.me/56912345678" target="_blank">✨ Pedir canción por WhatsApp</a>
+  </div>
 
-      <div class="buttons">
-        <a
-          href="https://wa.me/56992312434?text=Hola%2C%20soy%20un%20invitado%20del%20evento%20y%20quiero%20pedir%20esta%20canci%C3%B3n%3A%20"
-          target="_blank"
-        >
-          <button>📲 Pedir canción por WhatsApp</button>
-        </a>
-      </div>
-    </div>
-  </body>
+  <ul>
+    <li>11 & 6 <span class="artista">- Fito Páez</span></li>
+    <li>Ahora te puedes Marchar <span class="artista">- Luis Miguel</span></li>
+    <li>Amarrame <span class="artista">- Mon Laferte</span></li>
+    <li>Amiga <span class="artista">- Miguel Bose</span></li>
+    <li>Arthur Theme <span class="artista">- Christopher Cross</span></li>
+  </ul>
+</body>
 </html>
