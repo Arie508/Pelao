@@ -22,18 +22,25 @@
       max-width: 120px;
     }
     .whatsapp {
-      display: block;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-bottom: 20px;
     }
     .whatsapp a {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
       padding: 10px 20px;
       background-color: #25D366;
       color: white;
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
+      font-size: 16px;
+    }
+    .whatsapp img {
+      height: 20px;
     }
     ul {
       list-style-type: none;
@@ -51,14 +58,17 @@
 <body>
   <img src="logo.png" alt="The Piano Man logo" class="logo">
   <h1>🎹 The Piano Man</h1>
-  <p>Elige una canción y me la pides aquí...</p>
+  <h2 style="text-align: center; font-style: italic; font-size: 1.3em; margin-top: -10px;">“Una experiencia interactiva”</h2>
+  <p style="text-align: center; font-size: 1.1em;">Elige una canción, la eliges por acá y YO LA TOCO 🎹</p>
 
   <div class="whatsapp">
-    <a href="https://wa.me/56912345678" target="_blank">✨ Pedir canción por WhatsApp</a>
+    <a href="https://wa.me/56912345678" target="_blank">
+      <img src="Logo.png" alt="WhatsApp logo"> Pedir canción por WhatsApp
+    </a>
   </div>
 
   <ul>
-    <li>11 & 6 <span class='artista'>- Fito Páez</span></li>
+<li>11 & 6 <span class='artista'>- Fito Páez</span></li>
 <li>Ahora te puedes Marchar <span class='artista'>- Luis Miguel</span></li>
 <li>Amarrame <span class='artista'>- Mon Laferte</span></li>
 <li>Amiga <span class='artista'>- Miguel Bose</span></li>
