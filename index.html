@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Piano Man - Repertorio</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; padding: 1rem; }
+    h1 { text-align: center; }
+    input { width: 100%; padding: 8px; margin-bottom: 20px; }
+    .song-card { border: 1px solid #ccc; border-radius: 8px; padding: 10px; margin-bottom: 10px; }
+    .song-title { font-weight: bold; }
+    .song-artist { font-size: 0.9rem; color: #555; }
+    .links { text-align: center; margin-top: 2rem; }
+    .links a { display: block; margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <h1>🎹 The Piano Man</h1>
+  <p style="text-align:center">
+    Tú eliges la canción, yo la toco, canta conmigo.<br/>
+    Un show donde tú también eres parte.
+  </p>
+  <input type="text" id="search" placeholder="Buscar canción o artista..." />
+
+  <div id="songs"></div>
+
+  <div class="links">
+    <a href="repertorio-the-piano-man.pdf" target="_blank">📄 Ver PDF del repertorio</a>
+    <a href="https://forms.gle/YOUR_FORM_ID" target="_blank">📝 Pedir una canción</a>
+  </div>
+
+  <script>
+    const songs = [{"title": "11 & 6", "artist": "Fito Páez"}, {"title": "Ahora te puedes Marchar", "artist": "Luis Miguel"}, {"title": "Amarrame", "artist": "Mon Laferte"}, {"title": "Amiga", "artist": "Miguel Bose"}, {"title": "Arthur Theme", "artist": "Christopher Cross"}, {"title": "Bachata Rosa", "artist": "Juan Luis Guerra"}, {"title": "Bailando", "artist": "Enrique Iglesias"}, {"title": "Burbujas de Amor", "artist": "Juan Luis Guerra"}, {"title": "Canción para mi Muerte", "artist": "Sui Generis"}, {"title": "Carnaval", "artist": "Celia Cruz"}, {"title": "Celebration", "artist": "Kool & The Gang"}, {"title": "Chiquitita", "artist": "ABBA"}, {"title": "Ciega Sordomuda", "artist": "Shakira"}, {"title": "Close to You", "artist": "The Carpenters"}, {"title": "Completamente Enamorados", "artist": "Chayanne"}, {"title": "Con una rubia en el avión", "artist": "Los Ladrones Sueltos"}, {"title": "Corazón Partío", "artist": "Alejandro sanz"}, {"title": "Cuando Calienta el Sol", "artist": "Luis Miguel"}, {"title": "Dancing Queen", "artist": "ABBA"}, {"title": "De Música Ligera", "artist": "Soda Stereo"}, {"title": "Desesperada", "artist": "Marta Sánchez"}, {"title": "Despacito", "artist": "Luis Fonsi"}, {"title": "Dont Break my Heart", "artist": "Elton John"}, {"title": "El Rey", "artist": "Vicente Fernández"}, {"title": "Ella", "artist": "Leonardo Favio"}, {"title": "Eres Tú", "artist": "Mocedades"}, {"title": "Estoy Aquí", "artist": "Shakira"}, {"title": "Gloria", "artist": "Umberto Tozzi"}, {"title": "Guantanamera", "artist": "Celia Cruz"}, {"title": "Hasta que me Olvides", "artist": "Luis Miguel"}, {"title": "Hay Amor", "artist": "Myriam Hernández"}, {"title": "Hay que venir al Sur", "artist": "Rafaella Carrá"}, {"title": "Hey Jude", "artist": "The Beatles"}, {"title": "Hotel California", "artist": "Eagles"}, {"title": "I Gotta Feeling", "artist": "Black Eyed Peas"}, {"title": "La Bamba", "artist": "Gipsy Kings"}, {"title": "La Bilirrubina", "artist": "Juan Luis Guerra"}, {"title": "La Chica de Humo", "artist": "Emmanuel"}, {"title": "La Incondicional", "artist": "Luis Miguel"}, {"title": "La Incondicional", "artist": "Luis Miguel"}, {"title": "La Media Vuelta", "artist": "Luis Miguel"}, {"title": "Lamento Boliviano", "artist": "Enanitos Verdes"}, {"title": "Let it Be", "artist": "The Beatles"}, {"title": "Livin La Vida Loca", "artist": "Ricky Martin"}, {"title": "Los Momentos", "artist": "Eduardo Gatti"}, {"title": "Macarena", "artist": "Los del Río"}, {"title": "Mariposa Technicolor ", "artist": "Fito Páez"}, {"title": "Me Cuesta Tanto Olvidarte", "artist": "Mecano"}, {"title": "Mujeres", "artist": "Ricardo Arjona"}, {"title": "Nada Fue un Error", "artist": "Coti & Paulina Rubio"}, {"title": "New York", "artist": "Frank Sinatra"}, {"title": "Otra como Tu", "artist": "Eros Ramazzotti"}, {"title": "Penelope", "artist": "Diego Torres"}, {"title": "Piano Man", "artist": "Billy Joel"}, {"title": "Por Debajo de la Mesa", "artist": "Luis Miguel"}, {"title": "Puerto Montt", "artist": "Los Iracundos"}, {"title": "Querida", "artist": "Juan Gabriel"}, {"title": "Quisiera decir tu nombre", "artist": "José Lúis Perales"}, {"title": "Rasguña as Piedras", "artist": "Sui Generis"}, {"title": "Rocket Man", "artist": "Elton John"}, {"title": "September", "artist": "Earth Wind & Fire"}, {"title": "Será que no me amas", "artist": "Luis Miguel"}, {"title": "Señora de las Cuatro Decadas", "artist": "Ricardo Arjona"}, {"title": "Shake it Off", "artist": "Taylor Swift"}, {"title": "Sky full of Stars", "artist": "Coldplay"}, {"title": "Solamente una vez", "artist": "Luis Miguel"}, {"title": "Solo le pido a Diós", "artist": "Mercedes Sosa"}, {"title": "Te Amo", "artist": "Franco de Vita"}, {"title": "Top of the World", "artist": "The Carpenters"}, {"title": "Tus Viejas cartas", "artist": "Los Enanitos Verdes"}, {"title": "Un Beso y una Flor", "artist": "Nino Bravo"}, {"title": "Un Golpe de suerte", "artist": "Luis Jara"}, {"title": "Viva la Vida", "artist": "Coldplay"}, {"title": "Vivir sin Aire", "artist": "Maná"}, {"title": "We are the Champeons", "artist": "QUEEN"}, {"title": "We are the World", "artist": "Michael Jackson"}, {"title": "YMCA", "artist": "Village People"}, {"title": "Your Song", "artist": "Elton John"}];
+    const container = document.getElementById('songs');
+    const input = document.getElementById('search');
+
+    function render(filtered) {
+      container.innerHTML = '';
+      if (filtered.length === 0) {
+        container.innerHTML = '<p style="text-align:center">No se encontraron canciones.</p>';
+        return;
+      }
+      filtered.forEach(song => {
+        const div = document.createElement('div');
+        div.className = 'song-card';
+        div.innerHTML = `<div class="song-title">${song.title}</div><div class="song-artist">${song.artist}</div>`;
+        container.appendChild(div);
+      });
+    }
+
+    input.addEventListener('input', () => {
+      const q = input.value.toLowerCase();
+      const filtered = songs.filter(song =>
+        song.title.toLowerCase().includes(q) || song.artist.toLowerCase().includes(q)
+      );
+      render(filtered);
+    });
+
+    render(songs);
+  </script>
+</body>
+</html>
