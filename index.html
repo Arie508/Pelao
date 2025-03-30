@@ -1,23 +1,71 @@
-<div class="song-list">
-  <div class="song">
-    <p class="song-title">11 & 6</p>
-    <p class="song-artist">Fito Páez</p>
-  </div>
-  <div class="song">
-    <p class="song-title">Ahora te puedes Marchar</p>
-    <p class="song-artist">Luis Miguel</p>
-  </div>
-  <div class="song">
-    <p class="song-title">Amarrame</p>
-    <p class="song-artist">Mon Laferte</p>
-  </div>
-  <div class="song">
-    <p class="song-title">Amiga</p>
-    <p class="song-artist">Miguel Bose</p>
-  </div>
-  <div class="song">
-    <p class="song-title">Arthur Theme</p>
-    <p class="song-artist">Christopher Cross</p>
-  </div>
-  <!-- Aquí puedes agregar más canciones si lo deseas -->
-</div>
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { useState } from "react";
+
+const songs = [
+  { title: "11 & 6", artist: "Fito Páez" },
+  { title: "Ahora te puedes Marchar", artist: "Luis Miguel" },
+  { title: "Amarrame", artist: "Mon Laferte" },
+  { title: "Amiga", artist: "Miguel Bose" },
+  { title: "Arthur Theme", artist: "Christopher Cross" },
+  // Aquí se pueden agregar más canciones del repertorio
+];
+
+export default function RepertorioPage() {
+  const [query, setQuery] = useState("");
+
+  const filtered = songs.filter(
+    (song) =>
+      song.title.toLowerCase().includes(query.toLowerCase()) ||
+      song.artist.toLowerCase().includes(query.toLowerCase())
+  );
+
+  return (
+    <div className="max-w-2xl mx-auto p-4">
+      <h1 className="text-3xl font-bold mb-2 text-center">🎹 The Piano Man</h1>
+      <p className="text-center text-muted-foreground mb-6">
+        Tú eliges la canción, yo la toco, canta conmigo.<br />
+        Un show donde tú también eres parte.
+      </p>
+
+      <div className="mb-6">
+        <Input
+          placeholder="Buscar canción o artista..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </div>
+
+      <div className="grid gap-2">
+        {filtered.map((song, i) => (
+          <Card key={i}>
+            <CardContent className="p-4">
+              <div className="font-semibold">{song.title}</div>
+              <div className="text-sm text-muted-foreground">{song.artist}</div>
+            </CardContent>
+          </Card>
+        ))}
+        {filtered.length === 0 && (
+          <p className="text-center text-sm text-muted-foreground">No se encontraron canciones.</p>
+        )}
+      </div>
+
+      <div className="mt-10 text-center space-y-4">
+        <a
+          href="/repertorio-the-piano-man.pdf"
+          target="_blank"
+        >
+          <Button variant="outline">📄 Ver PDF del repertorio</Button>
+        </a>
+        <br />
+        <a
+          href="https://wa.me/56992312434?text=Hola%2C%20soy%20un%20invitado%20del%20evento%20y%20quiero%20pedir%20esta%20canci%C3%B3n:%20"
+          target="_blank"
+        >
+          <Button>📲 Pedir canción por WhatsApp</Button>
+        </a>
+      </div>
+    </div>
+  );
+}
