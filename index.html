@@ -48,105 +48,345 @@
     }
     li {
       padding: 5px 0;
+      background-color: #f0f0f0;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    li:hover {
+      background-color: #e0e0e0;
+    }
+    .toggled {
+      background-color: #4CAF50;
+      color: white;
     }
     .artista {
       color: #666;
       font-size: 0.9em;
+    }
+    h2 {
+      text-align: center;
+      font-style: italic;
+      font-size: 1.3em;
+      margin-top: -10px;
     }
   </style>
 </head>
 <body>
   <img src="logo.png" alt="The Piano Man logo" class="logo">
   <h1>🎹 The Piano Man</h1>
-  <h2 style="text-align: center; font-style: italic; font-size: 1.3em; margin-top: -10px;">“Una experiencia interactiva”</h2>
-  <p style="text-align: center; font-size: 1.1em;">Elige una canción, la eliges por acá y YO LA TOCO 🎹</p>
+  <h2>“Una experiencia interactiva”</h2>
+  <p style="text-align: center; font-size: 1.1em;">Elige una canción, por aquí y YO LA TOCO 🎹</p>
 
   <div class="whatsapp">
-    <a href="https://wa.me/56912345678" target="_blank">
+    <a href="https://wa.me/56992312434" target="_blank">
       <img src="Logo.png" alt="WhatsApp logo"> Pedir canción por WhatsApp
     </a>
   </div>
 
   <ul>
-<li>11 & 6 <span class='artista'>- Fito Páez</span></li>
-<li>Ahora te puedes Marchar <span class='artista'>- Luis Miguel</span></li>
-<li>Amarrame <span class='artista'>- Mon Laferte</span></li>
-<li>Amiga <span class='artista'>- Miguel Bose</span></li>
-<li>Arthur Theme <span class='artista'>- Christopher Cross</span></li>
-<li>Bachata Rosa <span class='artista'>- Juan Luis Guerra</span></li>
-<li>Bailando <span class='artista'>- Enrique Iglesias</span></li>
-<li>Burbujas de Amor <span class='artista'>- Juan Luis Guerra</span></li>
-<li>Canción para mi Muerte <span class='artista'>- Sui Generis</span></li>
-<li>Carnaval <span class='artista'>- Celia Cruz</span></li>
-<li>Celebration <span class='artista'>- Kool & The Gang</span></li>
-<li>Chiquitita <span class='artista'>- ABBA</span></li>
-<li>Ciega Sordomuda <span class='artista'>- Shakira</span></li>
-<li>Close to You <span class='artista'>- The Carpenters</span></li>
-<li>Completamente Enamorados <span class='artista'>- Chayanne</span></li>
-<li>Con una rubia en el avión <span class='artista'>- Los Ladrones Sueltos</span></li>
-<li>Corazón Partío <span class='artista'>- Alejandro sanz</span></li>
-<li>Cuando Calienta el Sol <span class='artista'>- Luis Miguel</span></li>
-<li>Dancing Queen <span class='artista'>- ABBA</span></li>
-<li>Desesperada <span class='artista'>- Marta Sánchez</span></li>
-<li>De Música Ligera <span class='artista'>- Soda Stereo</span></li>
-<li>Despacito <span class='artista'>- Luis Fonsi</span></li>
-<li>Dont Break my Heart <span class='artista'>- Elton John</span></li>
-<li>El Rey <span class='artista'>- Vicente Fernández</span></li>
-<li>Ella <span class='artista'>- Leonardo Favio</span></li>
-<li>Eres Tú <span class='artista'>- Mocedades</span></li>
-<li>Estoy Aquí <span class='artista'>- Shakira</span></li>
-<li>Gloria <span class='artista'>- Umberto Tozzi</span></li>
-<li>Guantanamera <span class='artista'>- Celia Cruz</span></li>
-<li>Hasta que me Olvides <span class='artista'>- Luis Miguel</span></li>
-<li>Hay Amor <span class='artista'>- Myriam Hernández</span></li>
-<li>Hay que venir al Sur <span class='artista'>- Rafaella Carrá</span></li>
-<li>Hey Jude <span class='artista'>- The Beatles</span></li>
-<li>Hotel California <span class='artista'>- Eagles</span></li>
-<li>I Gotta Feeling <span class='artista'>- Black Eyed Peas</span></li>
-<li>La Bamba <span class='artista'>- Gipsy Kings</span></li>
-<li>La Bilirrubina <span class='artista'>- Juan Luis Guerra</span></li>
-<li>La Chica de Humo <span class='artista'>- Emmanuel</span></li>
-<li>La Incondicional <span class='artista'>- Luis Miguel</span></li>
-<li>La Incondicional <span class='artista'>- Luis Miguel</span></li>
-<li>La Media Vuelta <span class='artista'>- Luis Miguel</span></li>
-<li>Lamento Boliviano <span class='artista'>- Enanitos Verdes</span></li>
-<li>Let it Be <span class='artista'>- The Beatles</span></li>
-<li>Livin La Vida Loca <span class='artista'>- Ricky Martin</span></li>
-<li>Los Momentos <span class='artista'>- Eduardo Gatti</span></li>
-<li>Macarena <span class='artista'>- Los del Río</span></li>
-<li>Mariposa Technicolor  <span class='artista'>- Fito Páez</span></li>
-<li>Me Cuesta Tanto Olvidarte <span class='artista'>- Mecano</span></li>
-<li>Mujeres <span class='artista'>- Ricardo Arjona</span></li>
-<li>Nada Fue un Error <span class='artista'>- Coti & Paulina Rubio</span></li>
-<li>New York <span class='artista'>- Frank Sinatra</span></li>
-<li>Otra como Tu <span class='artista'>- Eros Ramazzotti</span></li>
-<li>Penelope <span class='artista'>- Diego Torres</span></li>
-<li>Piano Man <span class='artista'>- Billy Joel</span></li>
-<li>Por Debajo de la Mesa <span class='artista'>- Luis Miguel</span></li>
-<li>Puerto Montt <span class='artista'>- Los Iracundos</span></li>
-<li>Querida <span class='artista'>- Juan Gabriel</span></li>
-<li>Quisiera decir tu nombre <span class='artista'>- José Lúis Perales</span></li>
-<li>Rasguña as Piedras <span class='artista'>- Sui Generis</span></li>
-<li>Rocket Man <span class='artista'>- Elton John</span></li>
-<li>Señora de las Cuatro Decadas <span class='artista'>- Ricardo Arjona</span></li>
-<li>September <span class='artista'>- Earth Wind & Fire</span></li>
-<li>Será que no me amas <span class='artista'>- Luis Miguel</span></li>
-<li>Shake it Off <span class='artista'>- Taylor Swift</span></li>
-<li>Sky full of Stars <span class='artista'>- Coldplay</span></li>
-<li>Solamente una vez <span class='artista'>- Luis Miguel</span></li>
-<li>Solo le pido a Diós <span class='artista'>- Mercedes Sosa</span></li>
-<li>Te Amo <span class='artista'>- Franco de Vita</span></li>
-<li>Top of the World <span class='artista'>- The Carpenters</span></li>
-<li>Tus Viejas cartas <span class='artista'>- Los Enanitos Verdes</span></li>
-<li>Un Beso y una Flor <span class='artista'>- Nino Bravo</span></li>
-<li>Un Golpe de suerte <span class='artista'>- Luis Jara</span></li>
-<li>Viva la Vida <span class='artista'>- Coldplay</span></li>
-<li>Vivir sin Aire <span class='artista'>- Maná</span></li>
-<li>We are the Champeons <span class='artista'>- QUEEN</span></li>
-<li>We are the World <span class='artista'>- Michael Jackson</span></li>
-<li>YMCA <span class='artista'>- Village People</span></li>
-<li>Your Song <span class='artista'>- Elton John</span></li>
+<li onclick="registerOrder('11 & 6', 'Fito Páez')">
+      11 & 6 <span class='artista'>- Fito Páez</span>
+    </li>
+<li onclick="registerOrder('Ahora te puedes Marchar', 'Luis Miguel')">
+      Ahora te puedes Marchar <span class='artista'>- Luis Miguel</span>
+    </li>
+<li onclick="registerOrder('Amarrame', 'Mon Laferte')">
+      Amarrame <span class='artista'>- Mon Laferte</span>
+    </li>
+<li onclick="registerOrder('Amiga', 'Miguel Bose')">
+      Amiga <span class='artista'>- Miguel Bose</span>
+    </li>
+<li onclick="registerOrder('Arthur Theme', 'Christopher Cross')">
+      Arthur Theme <span class='artista'>- Christopher Cross</span>
+    </li>
+<li onclick="registerOrder('Bachata Rosa', 'Juan Luis Guerra')">
+      Bachata Rosa <span class='artista'>- Juan Luis Guerra</span>
+    </li>
+<li onclick="registerOrder('Bailando', 'Enrique Iglesias')">
+      Bailando <span class='artista'>- Enrique Iglesias</span>
+    </li>
+<li onclick="registerOrder('Burbujas de Amor', 'Juan Luis Guerra')">
+      Burbujas de Amor <span class='artista'>- Juan Luis Guerra</span>
+    </li>
+<li onclick="registerOrder('Canción para mi Muerte', 'Sui Generis')">
+      Canción para mi Muerte <span class='artista'>- Sui Generis</span>
+    </li>
+<li onclick="registerOrder('Carnaval', 'Celia Cruz')">
+      Carnaval <span class='artista'>- Celia Cruz</span>
+    </li>
+<li onclick="registerOrder('Celebration', 'Kool & The Gang')">
+      Celebration <span class='artista'>- Kool & The Gang</span>
+    </li>
+<li onclick="registerOrder('Chiquitita', 'ABBA')">
+      Chiquitita <span class='artista'>- ABBA</span>
+    </li>
+<li onclick="registerOrder('Ciega Sordomuda', 'Shakira')">
+      Ciega Sordomuda <span class='artista'>- Shakira</span>
+    </li>
+<li onclick="registerOrder('Close to You', 'The Carpenters')">
+      Close to You <span class='artista'>- The Carpenters</span>
+    </li>
+<li onclick="registerOrder('Completamente Enamorados', 'Chayanne')">
+      Completamente Enamorados <span class='artista'>- Chayanne</span>
+    </li>
+<li onclick="registerOrder('Con una rubia en el avión', 'Los Ladrones Sueltos')">
+      Con una rubia en el avión <span class='artista'>- Los Ladrones Sueltos</span>
+    </li>
+<li onclick="registerOrder('Corazón Partío', 'Alejandro Sanz')">
+      Corazón Partío <span class='artista'>- Alejandro Sanz</span>
+    </li>
+<li onclick="registerOrder('Cuando Calienta el Sol', 'Luis Miguel')">
+      Cuando Calienta el Sol <span class='artista'>- Luis Miguel</span>
+    </li>
+<li onclick="registerOrder('Dancing Queen', 'ABBA')">
+      Dancing Queen <span class='artista'>- ABBA</span>
+    </li>
+<li onclick="registerOrder('Desesperada', 'Marta Sánchez')">
+      Desesperada <span class='artista'>- Marta Sánchez</span>
+    </li>
+<li onclick="registerOrder('De Música Ligera', 'Soda Stereo')">
+      De Música Ligera <span class='artista'>- Soda Stereo</span>
+    </li>
+<li onclick="registerOrder('Despacito', 'Luis Fonsi')">
+      Despacito <span class='artista'>- Luis Fonsi</span>
+    </li>
+<li onclick="registerOrder('Dont Break my Heart', 'Elton John')">
+      Dont Break my Heart <span class='artista'>- Elton John</span>
+    </li>
+<li onclick="registerOrder('El Rey', 'Vicente Fernández')">
+      El Rey <span class='artista'>- Vicente Fernández</span>
+    </li>
+<li onclick="registerOrder('Ella', 'Leonardo Favio')">
+      Ella <span class='artista'>- Leonardo Favio</span>
+    </li>
+<li onclick="registerOrder('Eres Tú', 'Mocedades')">
+      Eres Tú <span class='artista'>- Mocedades</span>
+    </li>
+<li onclick="registerOrder('Estoy Aquí', 'Shakira')">
+      Estoy Aquí <span class='artista'>- Shakira</span>
+    </li>
+<li onclick="registerOrder('Gloria', 'Umberto Tozzi')">
+      Gloria <span class='artista'>- Umberto Tozzi</span>
+    </li>
+<li onclick="registerOrder('Guantanamera', 'Celia Cruz')">
+      Guantanamera <span class='artista'>- Celia Cruz</span>
+    </li>
+<li onclick="registerOrder('Hasta que me Olvides', 'Luis Miguel')">
+      Hasta que me Olvides <span class='artista'>- Luis Miguel</span>
+    </li>
+<li onclick="registerOrder('Hay Amor', 'Myriam Hernández')">
+      Hay Amor <span class='artista'>- Myriam Hernández</span>
+    </li>
+<li onclick="registerOrder('Hay que venir al Sur', 'Rafaella Carrá')">
+      Hay que venir al Sur <span class='artista'>- Rafaella Carrá</span>
+    </li>
+<li onclick="registerOrder('Hey Jude', 'The Beatles')">
+      Hey Jude <span class='artista'>- The Beatles</span>
+    </li>
+<li onclick="registerOrder('Hotel California', 'Eagles')">
+      Hotel California <span class='artista'>- Eagles</span>
+    </li>
+<li onclick="registerOrder('I Gotta Feeling', 'Black Eyed Peas')">
+      I Gotta Feeling <span class='artista'>- Black Eyed Peas</span>
+    </li>
+<li onclick="registerOrder('La Bamba', 'Gipsy Kings')">
+      La Bamba <span class='artista'>- Gipsy Kings</span>
+    </li>
+<li onclick="registerOrder('La Bilirrubina', 'Juan Luis Guerra')">
+      La Bilirrubina <span class='artista'>- Juan Luis Guerra</span>
+    </li>
+<li onclick="registerOrder('La Chica de Humo', 'Emmanuel')">
+      La Chica de Humo <span class='artista'>- Emmanuel</span>
+    </li>
+<li onclick="registerOrder('La Incondicional', 'Luis Miguel')">
+      La Incondicional <span class='artista'>- Luis Miguel</span>
+    </li>
+<li onclick="registerOrder('La Incondicional', 'Luis Miguel')">
+      La Incondicional <span class='artista'>- Luis Miguel</span>
+    </li>
+<li onclick="registerOrder('La Media Vuelta', 'Luis Miguel')">
+      La Media Vuelta <span class='artista'>- Luis Miguel</span>
+    </li>
+<li onclick="registerOrder('Lamento Boliviano', 'Enanitos Verdes')">
+      Lamento Boliviano <span class='artista'>- Enanitos Verdes</span>
+    </li>
+<li onclick="registerOrder('Let it Be', 'The Beatles')">
+      Let it Be <span class='artista'>- The Beatles</span>
+    </li>
+<li onclick="registerOrder('Livin La Vida Loca', 'Ricky Martin')">
+      Livin La Vida Loca <span class='artista'>- Ricky Martin</span>
+    </li>
+<li onclick="registerOrder('Los Momentos', 'Eduardo Gatti')">
+      Los Momentos <span class='artista'>- Eduardo Gatti</span>
+    </li>
+<li onclick="registerOrder('Macarena', 'Los del Río')">
+      Macarena <span class='artista'>- Los del Río</span>
+    </li>
+<li onclick="registerOrder('Mariposa Technicolor', 'Fito Páez')">
+      Mariposa Technicolor <span class='artista'>- Fito Páez</span>
+    </li>
+<li onclick="registerOrder('Me Cuesta Tanto Olvidarte', 'Mecano')">
+      Me Cuesta Tanto Olvidarte <span class='artista'>- Mecano</span>
+    </li>
+<li onclick="registerOrder('Mujeres', 'Ricardo Arjona')">
+      Mujeres <span class='artista'>- Ricardo Arjona</span>
+    </li>
+<li onclick="registerOrder('Nada Fue un Error', 'Coti & Paulina Rubio')">
+      Nada Fue un Error <span class='artista'>- Coti & Paulina Rubio</span>
+    </li>
+<li onclick="registerOrder('New York', 'Frank Sinatra')">
+      New York <span class='artista'>- Frank Sinatra</span>
+    </li>
+<li onclick="registerOrder('Otra como Tu', 'Eros Ramazzotti')">
+      Otra como Tu <span class='artista'>- Eros Ramazzotti</span>
+    </li>
+<li onclick="registerOrder('Penelope', 'Diego Torres')">
+      Penelope <span class='artista'>- Diego Torres</span>
+    </li>
+<li onclick="registerOrder('Piano Man', 'Billy Joel')">
+      Piano Man <span class='artista'>- Billy Joel</span>
+    </li>
+<li onclick="registerOrder('Por Debajo de la Mesa', 'Luis Miguel')">
+      Por Debajo de la Mesa <span class='artista'>- Luis Miguel</span>
+    </li>
+<li onclick="registerOrder('Puerto Montt', 'Los Iracundos')">
+      Puerto Montt <span class='artista'>- Los Iracundos</span>
+    </li>
+<li onclick="registerOrder('Querida', 'Juan Gabriel')">
+      Querida <span class='artista'>- Juan Gabriel</span>
+    </li>
+<li onclick="registerOrder('Quisiera decir tu nombre', 'José Luis Perales')">
+      Quisiera decir tu nombre <span class='artista'>- José Luis Perales</span>
+    </li>
+<li onclick="registerOrder('Rasguña as Piedras', 'Sui Generis')">
+      Rasguña as Piedras <span class='artista'>- Sui Generis</span>
+    </li>
+<li onclick="registerOrder('Rocket Man', 'Elton John')">
+      Rocket Man <span class='artista'>- Elton John</span>
+    </li>
+<li onclick="registerOrder('Señora de las Cuatro Decadas', 'Ricardo Arjona')">
+      Señora de las Cuatro Decadas <span class='artista'>- Ricardo Arjona</span>
+    </li>
+<li onclick="registerOrder('September', 'Earth Wind & Fire')">
+      September <span class='artista'>- Earth Wind & Fire</span>
+    </li>
+<li onclick="registerOrder('Será que no me amas', 'Luis Miguel')">
+      Será que no me amas <span class='artista'>- Luis Miguel</span>
+    </li>
+<li onclick="registerOrder('Shake it Off', 'Taylor Swift')">
+      Shake it Off <span class='artista'>- Taylor Swift</span>
+    </li>
+<li onclick="registerOrder('Sky full of Stars', 'Coldplay')">
+      Sky full of Stars <span class='artista'>- Coldplay</span>
+    </li>
+<li onclick="registerOrder('Solamente una vez', 'Luis Miguel')">
+      Solamente una vez <span class='artista'>- Luis Miguel</span>
+    </li>
+<li onclick="registerOrder('Solo le pido a Dios', 'Mercedes Sosa')">
+      Solo le pido a Dios <span class='artista'>- Mercedes Sosa</span>
+    </li>
+<li onclick="registerOrder('Te Amo', 'Franco de Vita')">
+      Te Amo <span class='artista'>- Franco de Vita</span>
+    </li>
+<li onclick="registerOrder('Top of the World', 'The Carpenters')">
+      Top of the World <span class='artista'>- The Carpenters</span>
+    </li>
+<li onclick="registerOrder('Tus Viejas cartas', 'Los Enanitos Verdes')">
+      Tus Viejas cartas <span class='artista'>- Los Enanitos Verdes</span>
+    </li>
+<li onclick="registerOrder('Un Beso y una Flor', 'Nino Bravo')">
+      Un Beso y una Flor <span class='artista'>- Nino Bravo</span>
+    </li>
+<li onclick="registerOrder('Un Golpe de suerte', 'Luis Jara')">
+      Un Golpe de suerte <span class='artista'>- Luis Jara</span>
+    </li>
+<li onclick="registerOrder('Viva la Vida', 'Coldplay')">
+      Viva la Vida <span class='artista'>- Coldplay</span>
+    </li>
+<li onclick="registerOrder('Vivir sin Aire', 'Maná')">
+      Vivir sin Aire <span class='artista'>- Maná</span>
+    </li>
+<li onclick="registerOrder('We are the Champeons', 'QUEEN')">
+      We are the Champeons <span class='artista'>- QUEEN</span>
+    </li>
+<li onclick="registerOrder('We are the World', 'Michael Jackson')">
+      We are the World <span class='artista'>- Michael Jackson</span>
+    </li>
+<li onclick="registerOrder('YMCA', 'Village People')">
+      YMCA <span class='artista'>- Village People</span>
+    </li>
+<li onclick="registerOrder('Your Song', 'Elton John')">
+      Your Song <span class='artista'>- Elton John</span>
+    </li>
+<li onclick="registerOrder('Rasguña as Piedras', 'Sui Generis')">
+      Rasguña as Piedras <span class='artista'>- Sui Generis</span>
+    </li>
+<li onclick="registerOrder('Rocket Man', 'Elton John')">
+      Rocket Man <span class='artista'>- Elton John</span>
+    </li>
+<li onclick="registerOrder('Señora de las Cuatro Decadas', 'Ricardo Arjona')">
+      Señora de las Cuatro Decadas <span class='artista'>- Ricardo Arjona</span>
+    </li>
+<li onclick="registerOrder('September', 'Earth Wind & Fire')">
+      September <span class='artista'>- Earth Wind & Fire</span>
+    </li>
+<li onclick="registerOrder('Será que no me amas', 'Luis Miguel')">
+      Será que no me amas <span class='artista'>- Luis Miguel</span>
+    </li>
+<li onclick="registerOrder('Shake it Off', 'Taylor Swift')">
+      Shake it Off <span class='artista'>- Taylor Swift</span>
+    </li>
+<li onclick="registerOrder('Sky full of Stars', 'Coldplay')">
+      Sky full of Stars <span class='artista'>- Coldplay</span>
+    </li>
+<li onclick="registerOrder('Solamente una vez', 'Luis Miguel')">
+      Solamente una vez <span class='artista'>- Luis Miguel</span>
+    </li>
+<li onclick="registerOrder('Solo le pido a Dios', 'Mercedes Sosa')">
+      Solo le pido a Dios <span class='artista'>- Mercedes Sosa</span>
+    </li>
+<li onclick="registerOrder('Te Amo', 'Franco de Vita')">
+      Te Amo <span class='artista'>- Franco de Vita</span>
+    </li>
+<li onclick="registerOrder('Top of the World', 'The Carpenters')">
+      Top of the World <span class='artista'>- The Carpenters</span>
+    </li>
+<li onclick="registerOrder('Tus Viejas cartas', 'Los Enanitos Verdes')">
+      Tus Viejas cartas <span class='artista'>- Los Enanitos Verdes</span>
+    </li>
+<li onclick="registerOrder('Un Beso y una Flor', 'Nino Bravo')">
+      Un Beso y una Flor <span class='artista'>- Nino Bravo</span>
+    </li>
+<li onclick="registerOrder('Un Golpe de suerte', 'Luis Jara')">
+      Un Golpe de suerte <span class='artista'>- Luis Jara</span>
+    </li>
+<li onclick="registerOrder('Viva la Vida', 'Coldplay')">
+      Viva la Vida <span class='artista'>- Coldplay</span>
+    </li>
+<li onclick="registerOrder('Vivir sin Aire', 'Maná')">
+      Vivir sin Aire <span class='artista'>- Maná</span>
+    </li>
+<li onclick="registerOrder('We are the Champeons', 'QUEEN')">
+      We are the Champeons <span class='artista'>- QUEEN</span>
+    </li>
+<li onclick="registerOrder('We are the World', 'Michael Jackson')">
+      We are the World <span class='artista'>- Michael Jackson</span>
+    </li>
+<li onclick="registerOrder('YMCA', 'Village People')">
+      YMCA <span class='artista'>- Village People</span>
+    </li>
+<li onclick="registerOrder('Your Song', 'Elton John')">
+      Your Song <span class='artista'>- Elton John</span>
+    </li>
 
   </ul>
+
+  <script>
+    function registerOrder(cancion, artista) {
+      const item = event.target;
+      item.classList.add('toggled');
+      alert('Tu pedido de "' + cancion + '" ha sido recibido. ¡Pronto la toco!');
+    }
+  </script>
 </body>
 </html>
