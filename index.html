@@ -418,6 +418,13 @@
         payload: 'song=' + encodeURIComponent(cancion) + '&artist=' + encodeURIComponent(artista)
       };
 
+      // Aseguramos que los parámetros se pasen correctamente
+      const options = {
+        method: 'POST',
+        contentType: 'application/x-www-form-urlencoded',
+        payload: 'song=' + encodeURIComponent(cancion) + '&artist=' + encodeURIComponent(artista) + '&time=' + encodeURIComponent(new Date().toLocaleString())
+      };
+
       fetch(url, options)
         .then(response => response.text())
         .then(result => console.log(result))
